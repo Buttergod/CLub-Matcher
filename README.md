@@ -1,4 +1,5 @@
 # ClubMatcher
+# WIP
 
 Ovr:
 ClubMatcher is a website that is made for DRHS students. It takes an interactive quiz which then lets the student get a personalized list of top matching clubs at DRHs. This makes it easy for students to discover extracurriculars that they enjoy
@@ -62,3 +63,6 @@ for club in ClubDatabaseModule.getAllClubs():
 print("Here are the clubs that match your interests:")
 print(matchingClubs)
 ```
+## I am still trying to figure out how to get more clubs added
+### A google form??
+#### Please contact hcps-gangraded@henricostudents.org if you have any ideas
