@@ -74,6 +74,10 @@ print(matchingClubs)
             setting: "group setting"
         }, {
 ```
+
+### Quick Start
+
+
 ## I am still trying to figure out how to get more clubs added
 ### A google form??
 #### Please contact hcps-gangraded@henricostudents.org if you have any ideas
