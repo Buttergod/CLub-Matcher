@@ -77,15 +77,38 @@ print(matchingClubs)
 
 ## Quick Start
 
+1. Install Github
+```bash
+winget install --id GitHub.cli
+```
+2. Check with version
+```bash
+gh --version
+```
+3. Login
+```bash
+gh auth login
+```
+4. Clone repo
+```bash
+gh repo clone Buttergod/CLub-Matcher
+```
+5. Open in VS Code
+```bash
+code CLub-Matcher
+```
+6. Open in localhost
 ```bash
 python -m http.server 8000
 ```
-Then go to - http://localhost:8000/
+7. Then go to:
+http://localhost:8000/
+
 
 ## Github Pages
-```link
+
 https://buttergod.github.io/CLub-Matcher/
-```
+
 
 ## I am still trying to figure out how to get more clubs added
 ### A google form??
