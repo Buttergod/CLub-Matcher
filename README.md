@@ -16,7 +16,8 @@ Developed to meet the deadline(Feburary 1st)
 
 # Pseudocode
 
-Pseudocode python V1
+###### Pseudocode python V1
+
 ```python
 import ClubDatabaseModule  # Placeholder for the actual module that contains club data
 
@@ -34,7 +35,7 @@ print("Here are the clubs that match your interests:")
 print(matchingClubs)
 ```
 
-Pseudocode python V2
+###### Pseudocode python V2
 ```python
 try:
     import ClubDatabaseModule  # type: ignore[import-not-found]
@@ -62,6 +63,16 @@ for club in ClubDatabaseModule.getAllClubs():
 
 print("Here are the clubs that match your interests:")
 print(matchingClubs)
+```
+###### HTML Club Format
+```html
+
+        const clubs = [{
+            name: "write club name here",
+            interests: ["the tags for intreasets", "you can add multiple"],
+            activities: ["the tags for activity", "you can add multiple"],
+            setting: "group setting"
+        }, {
 ```
 ## I am still trying to figure out how to get more clubs added
 ### A google form??
