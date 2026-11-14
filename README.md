@@ -75,8 +75,17 @@ print(matchingClubs)
         }, {
 ```
 
-### Quick Start
+## Quick Start
 
+```bash
+python -m http.server 8000
+```
+Then go to - http://localhost:8000/
+
+## Github Pages
+```link
+https://buttergod.github.io/CLub-Matcher/
+```
 
 ## I am still trying to figure out how to get more clubs added
 ### A google form??
