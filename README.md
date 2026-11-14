@@ -14,7 +14,7 @@ Goals:
 Created as an individual project and will be using Scrum methodology
 Developed to meet the deadline(Feburary 1st)
 
-# Pseudocode
+# Code
 
 ###### Pseudocode python V1
 
