@@ -104,6 +104,9 @@ python -m http.server 8000
 7. Then go to:
 http://localhost:8000/
 
+``shortcut
+Use CTRL + C to stop any processes in the terminal. 
+```
 
 ## Github Pages
 
