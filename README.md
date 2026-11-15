@@ -69,7 +69,7 @@ print(matchingClubs)
 
         const clubs = [{
             name: "write club name here",
-            interests: ["the tags for intreasets", "you can add multiple"],
+            interests: ["the tags for interests", "you can add multiple"],
             activities: ["the tags for activity", "you can add multiple"],
             setting: "group setting"
         }, {
