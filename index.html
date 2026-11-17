@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--By Divit-->
-<!--For the CIT Project Showcase-->
+<!--By Divit 
+For CIT Showcase-->
 
 <html lang="en">
 
@@ -292,590 +292,700 @@
     <!--I had to manually do these clubs... obviously it is not all the clubs, but It is still alot-->
     <!--The place holder is baskeball so there may be some errors-->
     <script>
-        const clubs = [{
-            name: "ASA (Animal Shelter)",
-            interests: ["community", "nature"],
-            activities: ["help", "learn"],
-            setting: "social"
-        }, {
-            name: "Academic Quiz Bowl",
-            interests: ["science"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Active Minds",
-            interests: ["science", "community"],
-            activities: ["learn", "help"],
-            setting: "social"
-        }, {
-            name: "Amnesty International",
-            interests: ["community"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "Art Club",
-            interests: ["arts"],
-            activities: ["create"],
-            setting: "social"
-        }, {
-            name: "Badminton Club",
-            interests: ["sports"],
-            activities: ["compete"],
-            setting: "team"
-        }, {
-            name: "Baking Club",
-            interests: ["arts"],
-            activities: ["create", "learn"],
-            setting: "social"
-        }, {
-            name: "Basketball Pep Band",
-            interests: ["arts", "sports"],
-            activities: ["create", "compete"],
-            setting: "team"
-        }, {
-            name: "Better2Gether RVA",
-            interests: ["community"],
-            activities: ["help"],
-            setting: "team"
-        }, {
-            name: "Black Student Union",
-            interests: ["community"],
-            activities: ["learn", "help"],
-            setting: "social",
-            race: "black"
-        }, {
-            name: "Brazilian Student Union",
-            interests: ["community", "arts"],
-            activities: ["learn", "create"],
-            setting: "social",
-            race: "brazilian"
-        }, {
-            name: "Bread Club",
-            interests: ["arts"],
-            activities: ["create", "learn"],
-            setting: "social"
-        }, {
-            name: "Cards for Kids",
-            interests: ["community", "arts"],
-            activities: ["help", "create"],
-            setting: "team"
-        }, {
-            name: "Chinese Student Association",
-            interests: ["community"],
-            activities: ["learn", "create"],
-            setting: "social",
-            race: "asian"
-        }, {
-            name: "Circle Of Friends",
-            interests: ["community"],
-            activities: ["help", "learn"],
-            setting: "social"
-        }, {
-            name: "Color Guard",
-            interests: ["arts", "sports"],
-            activities: ["create", "compete"],
-            setting: "team"
-        }, {
-            name: "Cancer Awareness Club",
-            interests: ["science", "community"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "Chess Club",
-            interests: ["science"],
-            activities: ["build", "compete"],
-            setting: "social"
-        }, {
-            name: "Computer Club",
-            interests: ["technology"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "Computer Science Honor Society",
-            interests: ["technology", "science"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "Connect Me",
-            interests: ["community", "technology"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "Creative Writing Club",
-            interests: ["arts"],
-            activities: ["create", "learn"],
-            setting: "social"
-        }, {
-            name: "Debate",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "DECA",
-            interests: ["business"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Desi Dance Club",
-            interests: ["arts", "sports"],
-            activities: ["create", "compete"],
-            setting: "team",
-            race: "desi"
-        }, {
-            name: "Desi Student Association",
-            interests: ["community", "arts"],
-            activities: ["learn", "create"],
-            setting: "social",
-            race: "desi"
-        }, {
-            name: "Drama Club",
-            interests: ["arts"],
-            activities: ["create", "compete"],
-            setting: "team"
-        }, {
-            name: "Eco Bloom Project",
-            interests: ["nature", "community"],
-            activities: ["help", "build"],
-            setting: "team"
-        }, {
-            name: "Endangered Species Club",
-            interests: ["nature", "science"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "Educators Rising",
-            interests: ["community"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "Environmental Club",
-            interests: ["nature", "community"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "Envirothon",
-            interests: ["nature", "science"],
-            activities: ["learn", "compete"],
-            setting: "team"
-        }, {
-            name: "Equity Ambassadors",
-            interests: ["community", "business"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "Ethics Club",
-            interests: ["community", "science"],
-            activities: ["learn", "discuss"],
-            setting: "social"
-        }, {
-            name: "FBLA (Future Business Leaders of America)",
-            interests: ["business"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "FCA (Fellowship of Christian Athletes)",
-            interests: ["sports", "community"],
-            activities: ["compete", "help"],
-            setting: "social"
-        }, {
-            name: "FCCLA",
-            interests: ["business", "community"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "Finance and Economics Club",
-            interests: ["business"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "FORENSICS (SPEECH TEAM)",
-            interests: ["arts"],
-            activities: ["create", "compete"],
-            setting: "team"
-        }, {
-            name: "French Club",
-            interests: ["community", "arts"],
-            activities: ["learn", "create"],
-            setting: "social"
-        }, {
-            name: "French Honor Society",
-            interests: ["community"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "Future Scientists of America",
-            interests: ["science"],
-            activities: ["learn", "build"],
-            setting: "team"
-        }, {
-            name: "Gender Sexuality Alliance",
-            interests: ["community"],
-            activities: ["help", "learn"],
-            setting: "social",
-            gender: "gay"
-        }, {
-            name: "Geography Club",
-            interests: ["nature", "science"],
-            activities: ["learn"],
-            setting: "social"
-        }, {
-            name: "The Giving Oven",
-            interests: ["community", "arts"],
-            activities: ["help", "create"],
-            setting: "team"
-        }, {
-            name: "Growing Beyond Earth",
-            interests: ["nature", "science"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "Habitat for Humanity",
-            interests: ["community"],
-            activities: ["help", "build"],
-            setting: "team"
-        }, {
-            name: "Heart Club",
-            interests: ["community", "science"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "Helpful Hearts",
-            interests: ["community"],
-            activities: ["help"],
-            setting: "team"
-        }, {
-            name: "Hispanic Heritage Society",
-            interests: ["community", "arts"],
-            activities: ["learn", "create"],
-            setting: "social",
-            race: "hispanic-latino"
-        }, {
-            name: "Honor Council",
-            interests: ["business", "community"],
-            activities: ["help", "learn"],
-            setting: "team"
-        }, {
-            name: "International/Trivia Club",
-            interests: ["science", "community"],
-            activities: ["learn", "compete"],
-            setting: "social"
-        }, {
-            name: "Jewish Student Union (JSU)",
-            interests: ["community"],
-            activities: ["learn", "help"],
-            setting: "social",
-            race: "jewish"
-        }, {
-            name: "Key Club",
-            interests: ["community"],
-            activities: ["help"],
-            setting: "team"
-        }, {
-            name: "Kindness Club",
-            interests: ["community"],
-            activities: ["help"],
-            setting: "social"
-        }, {
-            name: "Knitting Club",
-            interests: ["arts"],
-            activities: ["create", "learn"],
-            setting: "social"
-        }, {
-            name: "Latin Club",
-            interests: ["community", "arts"],
-            activities: ["learn"],
-            setting: "social"
-        }, {
-            name: "Latin Honor Society",
-            interests: ["community"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "Literary Magazine Club",
-            interests: ["arts"],
-            activities: ["create", "learn"],
-            setting: "team"
-        }, {
-            name: "Marching Band",
-            interests: ["arts", "sports"],
-            activities: ["create", "compete"],
-            setting: "team"
-        }, {
-            name: "Math Competition Club",
-            interests: ["science"],
-            activities: ["build", "compete"],
-            setting: "team"
-        }, {
-            name: "Media/Photography Club",
-            interests: ["arts", "technology"],
-            activities: ["create", "learn"],
-            setting: "independent"
-        }, {
-            name: "Medical Club",
-            interests: ["science"],
-            activities: ["learn", "build"],
-            setting: "team"
-        }, {
-            name: "Medical Impact Club",
-            interests: ["science", "community"],
-            activities: ["learn", "help"],
-            setting: "team"
-        }, {
-            name: "MedTech Club",
-            interests: ["technology", "science"],
-            activities: ["build", "learn"],
-            setting: "team"
-        }, {
-            name: "Mentor Program",
-            interests: ["community"],
-            activities: ["help", "learn"],
-            setting: "social"
-        }, {
-            name: "Mock Trial",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Mission Monthly",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Model UN",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Morgans Message",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Move for a Cause",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Mu Alpha Theta",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Muslim Student Association",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Musical History Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "National Honor Society",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "NEWSPAPER (The Sentinel)",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "One Love Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Operation Smile",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Origami Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Our opinions Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Pals with a Purpose",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Pakistani Student Association",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Peak Scholars",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Philosophy Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Pickleball Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Poetry Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Positive  Dogs",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "RAMPS",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Rock Climbing Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "ROBOTICS (Blue Cheese)",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Royal Youth Bible Study",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Rubik's Cube Team",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "SCA",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "SCIENCE NATIONAL HONOR SOCIETY",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "South Asian Students Association (SASA)",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "SPANISH CLUB",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "SPANISH HONOR SOCIETY",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "SPORTS FOR CHANGE",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "STEP TEAM",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Rocketry",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Rocketry",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Rocketry",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "THESPIANS NATIONAL HONOR SOCIETY",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "TRI-M NATIONAL MUSIC HONOR SOCIETY",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "TSA (Technology Student Association)",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "UNICEF",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Upcycling/ Fashion&Upcycling",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "The Victorian Literature Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Walk and Talk Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Wildcats for Change",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Wildcat News",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Wildcat Reading Club (WRC)",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Writing Center",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Yearbook",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }, {
-            name: "Young Lifters Club",
-            interests: ["business", "arts"],
-            activities: ["compete", "learn"],
-            setting: "team"
-        }];
+const clubs = [
+    {
+        name: "ASA (Animal Shelter)",
+        interests: ["community", "nature"],
+        activities: ["help", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Academic Quiz Bowl",
+        interests: ["science", "academics"],
+        activities: ["compete", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Active Minds",
+        interests: ["science", "health"],
+        activities: ["learn", "help"],
+        setting: "social"
+    },
+    {
+        name: "Amnesty International",
+        interests: ["community"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Art Club",
+        interests: ["arts"],
+        activities: ["create"],
+        setting: "social"
+    },
+    {
+        name: "Badminton Club",
+        interests: ["sports"],
+        activities: ["compete"],
+        setting: "team"
+    },
+    {
+        name: "Baking Club",
+        interests: ["arts"],
+        activities: ["create", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Basketball Pep Band",
+        interests: ["arts", "sports", "music"],
+        activities: ["create", "compete", "perform"],
+        setting: "team"
+    },
+    {
+        name: "Better2Gether RVA",
+        interests: ["community"],
+        activities: ["help"],
+        setting: "team"
+    },
+    {
+        name: "Black Student Union",
+        interests: ["community", "culture"],
+        activities: ["learn", "help"],
+        setting: "social",
+        race: "black"
+    },
+    {
+        name: "Brazilian Student Union",
+        interests: ["community", "culture", "arts"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "brazilian"
+    },
+    {
+        name: "Bread Club",
+        interests: ["arts"],
+        activities: ["create", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Cards for Kids",
+        interests: ["community", "arts"],
+        activities: ["help", "create"],
+        setting: "team"
+    },
+    {
+        name: "Chinese Student Association",
+        interests: ["community", "culture"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "asian"
+    },
+    {
+        name: "Circle Of Friends",
+        interests: ["community"],
+        activities: ["help", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Color Guard",
+        interests: ["arts", "sports", "performance"],
+        activities: ["create", "compete", "perform"],
+        setting: "team"
+    },
+    {
+        name: "Cancer Awareness Club",
+        interests: ["science", "community", "health"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "Chess Club",
+        interests: ["science", "academics"],
+        activities: ["build", "compete"],
+        setting: "social"
+    },
+    {
+        name: "Computer Club",
+        interests: ["technology"],
+        activities: ["build", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Computer Science Honor Society",
+        interests: ["technology", "science", "academics"],
+        activities: ["build", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Connect Me",
+        interests: ["community", "technology"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Creative Writing Club",
+        interests: ["literature", "arts"],
+        activities: ["create", "write"],
+        setting: "social"
+    },
+    {
+        name: "Debate",
+        interests: ["academics", "business"],
+        activities: ["compete", "learn", "discuss"],
+        setting: "team"
+    },
+    {
+        name: "DECA",
+        interests: ["business"],
+        activities: ["compete", "learn", "organize"],
+        setting: "team"
+    },
+    {
+        name: "Desi Dance Club",
+        interests: ["arts", "sports", "performance", "music"],
+        activities: ["create", "compete", "perform"],
+        setting: "team",
+        race: "desi"
+    },
+    {
+        name: "Desi Student Association",
+        interests: ["community", "culture", "arts"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "desi"
+    },
+    {
+        name: "Drama Club",
+        interests: ["performance", "arts"],
+        activities: ["create", "perform", "compete"],
+        setting: "team"
+    },
+    {
+        name: "Eco Bloom Project",
+        interests: ["nature", "community"],
+        activities: ["help", "build"],
+        setting: "team"
+    },
+    {
+        name: "Endangered Species Club",
+        interests: ["nature", "science"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "Educators Rising",
+        interests: ["community", "academics"],
+        activities: ["learn", "help", "organize"],
+        setting: "team"
+    },
+    {
+        name: "Environmental Club",
+        interests: ["nature", "community"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Envirothon",
+        interests: ["nature", "science"],
+        activities: ["learn", "compete", "research"],
+        setting: "team"
+    },
+    {
+        name: "Equity Ambassadors",
+        interests: ["community", "business"],
+        activities: ["help", "learn", "organize"],
+        setting: "team"
+    },
+    {
+        name: "Ethics Club",
+        interests: ["academics", "community"],
+        activities: ["learn", "discuss"],
+        setting: "discussion"
+    },
+    {
+        name: "FBLA (Future Business Leaders of America)",
+        interests: ["business"],
+        activities: ["compete", "learn"],
+        setting: "team"
+    },
+    {
+        name: "FCA (Fellowship of Christian Athletes)",
+        interests: ["sports", "community"],
+        activities: ["compete", "help"],
+        setting: "social"
+    },
+    {
+        name: "FCCLA",
+        interests: ["business", "community"],
+        activities: ["build", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Finance and Economics Club",
+        interests: ["business", "academics"],
+        activities: ["build", "learn"],
+        setting: "team"
+    },
+    {
+        name: "FORENSICS (SPEECH TEAM)",
+        interests: ["arts", "performance"],
+        activities: ["create", "compete", "perform"],
+        setting: "team"
+    },
+    {
+        name: "French Club",
+        interests: ["culture", "community"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "french"
+    },
+    {
+        name: "French Honor Society",
+        interests: ["academics", "culture"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "Future Scientists of America",
+        interests: ["science"],
+        activities: ["learn", "build", "research"],
+        setting: "team"
+    },
+    {
+        name: "Gender Sexuality Alliance",
+        interests: ["community"],
+        activities: ["help", "learn"],
+        setting: "social",
+        gender: "gay"
+    },
+    {
+        name: "Geography Club",
+        interests: ["nature", "science", "academics"],
+        activities: ["learn"],
+        setting: "social"
+    },
+    {
+        name: "The Giving Oven",
+        interests: ["community", "arts"],
+        activities: ["help", "create"],
+        setting: "team"
+    },
+    {
+        name: "Growing Beyond Earth",
+        interests: ["nature", "science"],
+        activities: ["build", "learn", "research"],
+        setting: "team"
+    },
+    {
+        name: "Habitat for Humanity",
+        interests: ["community"],
+        activities: ["help", "build"],
+        setting: "team"
+    },
+    {
+        name: "Heart Club",
+        interests: ["community", "science", "health"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Helpful Hearts",
+        interests: ["community"],
+        activities: ["help", "volunteer"],
+        setting: "team"
+    },
+    {
+        name: "Hispanic Heritage Society",
+        interests: ["community", "culture", "arts"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "hispanic-latino"
+    },
+    {
+        name: "Honor Council",
+        interests: ["business", "community", "academics"],
+        activities: ["help", "learn", "organize"],
+        setting: "team"
+    },
+    {
+        name: "International/Trivia Club",
+        interests: ["science", "community", "culture"],
+        activities: ["learn", "compete"],
+        setting: "social",
+        race: "international"
+    },
+    {
+        name: "Jewish Student Union (JSU)",
+        interests: ["community", "culture"],
+        activities: ["learn", "help"],
+        setting: "social",
+        race: "jewish"
+    },
+    {
+        name: "Key Club",
+        interests: ["community"],
+        activities: ["help", "volunteer"],
+        setting: "team"
+    },
+    {
+        name: "Kindness Club",
+        interests: ["community"],
+        activities: ["help", "volunteer"],
+        setting: "social"
+    },
+    {
+        name: "Knitting Club",
+        interests: ["arts"],
+        activities: ["create", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Latin Club",
+        interests: ["culture", "academics"],
+        activities: ["learn"],
+        setting: "social",
+        race: "latin"
+    },
+    {
+        name: "Latin Honor Society",
+        interests: ["academics", "culture"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "Literary Magazine Club",
+        interests: ["literature", "arts"],
+        activities: ["create", "write"],
+        setting: "team"
+    },
+    {
+        name: "Marching Band",
+        interests: ["arts", "sports", "music", "performance"],
+        activities: ["create", "compete", "perform"],
+        setting: "team"
+    },
+    {
+        name: "Math Competition Club",
+        interests: ["science", "academics"],
+        activities: ["build", "compete"],
+        setting: "team"
+    },
+    {
+        name: "Media/Photography Club",
+        interests: ["arts", "technology"],
+        activities: ["create", "learn"],
+        setting: "independent"
+    },
+    {
+        name: "Medical Club",
+        interests: ["science", "health"],
+        activities: ["learn", "build"],
+        setting: "team"
+    },
+    {
+        name: "Medical Impact Club",
+        interests: ["science", "community", "health"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "MedTech Club",
+        interests: ["technology", "science", "health"],
+        activities: ["build", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Mentor Program",
+        interests: ["community", "academics"],
+        activities: ["help", "learn"],
+        setting: "social"
+    },
+    {
+        name: "Mock Trial",
+        interests: ["academics", "business"],
+        activities: ["compete", "learn", "discuss"],
+        setting: "team"
+    },
+    {
+        name: "Mission Monthly",
+        interests: ["community", "literature"],
+        activities: ["write", "help"],
+        setting: "team"
+    },
+    {
+        name: "Model UN",
+        interests: ["academics", "community"],
+        activities: ["compete", "learn", "discuss"],
+        setting: "team"
+    },
+    {
+        name: "Morgans Message",
+        interests: ["health", "community"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Move for a Cause",
+        interests: ["sports", "community"],
+        activities: ["compete", "help"],
+        setting: "team"
+    },
+    {
+        name: "Mu Alpha Theta",
+        interests: ["science", "academics"],
+        activities: ["compete", "learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "Muslim Student Association",
+        interests: ["community", "culture"],
+        activities: ["learn", "help"],
+        setting: "social",
+        race: "muslim"
+    },
+    {
+        name: "Musical History Club",
+        interests: ["music", "arts", "academics"],
+        activities: ["learn", "discuss"],
+        setting: "discussion"
+    },
+    {
+        name: "National Honor Society",
+        interests: ["community", "academics"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "NEWSPAPER (The Sentinel)",
+        interests: ["literature", "technology", "arts"],
+        activities: ["write", "create"],
+        setting: "team"
+    },
+    {
+        name: "One Love Club",
+        interests: ["community", "health"],
+        activities: ["help", "learn"],
+        setting: "team"
+    },
+    {
+        name: "Operation Smile",
+        interests: ["community", "health"],
+        activities: ["help", "volunteer"],
+        setting: "team"
+    },
+    {
+        name: "Origami Club",
+        interests: ["arts"],
+        activities: ["create"],
+        setting: "social"
+    },
+    {
+        name: "Our Opinions Club",
+        interests: ["community", "academics"],
+        activities: ["learn", "discuss"],
+        setting: "discussion"
+    },
+    {
+        name: "Pals with a Purpose",
+        interests: ["community"],
+        activities: ["help"],
+        setting: "social"
+    },
+    {
+        name: "Pakistani Student Association",
+        interests: ["community", "culture"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "pakistani"
+    },
+    {
+        name: "Peak Scholars",
+        interests: ["academics"],
+        activities: ["learn"],
+        setting: "team"
+    },
+    {
+        name: "Philosophy Club",
+        interests: ["academics"],
+        activities: ["learn", "discuss"],
+        setting: "discussion"
+    },
+    {
+        name: "Pickleball Club",
+        interests: ["sports"],
+        activities: ["compete"],
+        setting: "social"
+    },
+    {
+        name: "Poetry Club",
+        interests: ["literature", "arts"],
+        activities: ["write", "create"],
+        setting: "social"
+    },
+    {
+        name: "Positive Dogs",
+        interests: ["community", "nature"],
+        activities: ["help"],
+        setting: "social"
+    },
+    {
+        name: "RAMPS",
+        interests: ["engineering", "technology", "community"],
+        activities: ["build", "help"],
+        setting: "team"
+    },
+    {
+        name: "Rock Climbing Club",
+        interests: ["sports", "nature"],
+        activities: ["compete"],
+        setting: "social"
+    },
+    {
+        name: "ROBOTICS (Blue Cheese)",
+        interests: ["engineering", "technology"],
+        activities: ["build", "compete"],
+        setting: "team"
+    },
+    {
+        name: "Royal Youth Bible Study",
+        interests: ["community"],
+        activities: ["learn"],
+        setting: "social"
+    },
+    {
+        name: "Rubik's Cube Team",
+        interests: ["science", "academics"],
+        activities: ["compete", "build"],
+        setting: "team"
+    },
+    {
+        name: "SCA",
+        interests: ["business", "community"],
+        activities: ["organize", "help"],
+        setting: "team"
+    },
+    {
+        name: "SCIENCE NATIONAL HONOR SOCIETY",
+        interests: ["science", "academics"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "South Asian Students Association (SASA)",
+        interests: ["community", "culture"],
+        activities: ["learn", "create"],
+        setting: "social",
+        race: "south-asian"
+    },
+    {
+        name: "SPANISH CLUB",
+        interests: ["culture", "community"],
+        activities: ["learn"],
+        setting: "social"
+    },
+    {
+        name: "SPANISH HONOR SOCIETY",
+        interests: ["academics", "culture"],
+        activities: ["learn", "help"],
+        setting: "team"
+    },
+    {
+        name: "SPORTS FOR CHANGE",
+        interests: ["sports", "community"],
+        activities: ["compete", "help"],
+        setting: "team"
+    },
+    {
+        name: "STEP TEAM",
+        interests: ["arts", "sports", "performance"],
+        activities: ["perform", "compete"],
+        setting: "team"
+    },
+    {
+        name: "Rocketry",
+        interests: ["engineering", "science"],
+        activities: ["build", "compete"],
+        setting: "team"
+    },
+    {
+        name: "THESPIANS NATIONAL HONOR SOCIETY",
+        interests: ["performance", "arts"],
+        activities: ["perform", "create"],
+        setting: "team"
+    },
+    {
+        name: "TRI-M NATIONAL MUSIC HONOR SOCIETY",
+        interests: ["music", "arts"],
+        activities: ["perform", "learn"],
+        setting: "team"
+    },
+    {
+        name: "TSA (Technology Student Association)",
+        interests: ["engineering", "technology"],
+        activities: ["build", "compete"],
+        setting: "team"
+    },
+    {
+        name: "UNICEF",
+        interests: ["community"],
+        activities: ["help"],
+        setting: "team"
+    },
+    {
+        name: "Upcycling/ Fashion&Upcycling",
+        interests: ["arts", "nature"],
+        activities: ["create"],
+        setting: "independent"
+    },
+    {
+        name: "The Victorian Literature Club",
+        interests: ["literature", "arts"],
+        activities: ["read", "discuss"],
+        setting: "discussion"
+    },
+    {
+        name: "Walk and Talk Club",
+        interests: ["health", "sports"],
+        activities: ["learn"],
+        setting: "social"
+    },
+    {
+        name: "Wildcats for Change",
+        interests: ["community"],
+        activities: ["help"],
+        setting: "team"
+    },
+    {
+        name: "Wildcat News",
+        interests: ["arts", "technology"],
+        activities: ["create", "write"],
+        setting: "team"
+    },
+    {
+        name: "Wildcat Reading Club (WRC)",
+        interests: ["literature"],
+        activities: ["learn", "read"],
+        setting: "discussion"
+    },
+    {
+        name: "Writing Center",
+        interests: ["literature", "academics"],
+        activities: ["help", "write"],
+        setting: "team"
+    },
+    {
+        name: "Yearbook",
+        interests: ["arts", "technology"],
+        activities: ["create", "write"],
+        setting: "team"
+    },
+    {
+        name: "Young Lifters Club",
+        interests: ["sports", "health"],
+        activities: ["compete"],
+        setting: "social"
+    }
+];
 
 
         const interestSelect = document.getElementById("interest");
