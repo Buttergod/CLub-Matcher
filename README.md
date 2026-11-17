@@ -2,9 +2,11 @@
 # WIP
 
 Ovr:
+
 ClubMatcher is a website that is made for DRHS students. It takes an interactive quiz which then lets the student get a personalized list of top matching clubs at DRHs. This makes it easy for students to discover extracurriculars that they enjoy
 
 Feat:
+
 Interactive quiz: Students input main intreasts
 Automatic club matchinfg: Filters and finds diffrent clubs and displays the matching clubs to the students
 UI: Clean and friendly UI
@@ -13,6 +15,11 @@ Goals:
 
 Created as an individual project and will be using Scrum methodology
 Developed to meet the deadline(Feburary 1st)
+
+Proposal:
+
+For the CIT Project Showcase, I will develop the “Club Matcher” website which is designed to let students connect more to DRHS clubs and extracurriculars. It will take an interactive interest quiz and then generate a personalized list of top DRHS clubs. I plan to build this website independently and will attempt to finish by February 1st. Until then, I plan to get approved by Mrs. Norris, and therefore get acceptance for having my project be uploaded onto the official school platform. Once I build the website, I will refine and bug-test through multiple individuals.
+
 
 # Code
 
