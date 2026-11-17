@@ -34,13 +34,13 @@ Please forgive me, I tried my best on making a textbased flowchart
                 | Grant only the |  no protected
                 | allowed action |  action performed)
                 +----------------+
-                         |
-                         v
-                +----------------+
-                | Read or write  |
-                | permitted data |
-                +----------------+
-                         |
+                         |        \
+                         v         \
+                +----------------+  \
+                | Student sees   |   +----------------+
+                | permitted data |   | Admin sees     |
+                +----------------+   | permitted data |
+                         |           +----------------+
                          v
                    (Session ends)
 
