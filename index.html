@@ -12,6 +12,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClubMatcher</title>
     <style>
+    .button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.secondary-btn:hover {
+    background: #e3f3f2;
+    color: var(--primary-dark);
+}
+
+.search-box {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    font-size: 1rem;
+    margin-bottom: 16px;
+    background: #f2fbfb;
+    color: var(--text);
+}
+
+.hidden {
+    display: none;
+}
          :root {
             --bg: #eaf7f7;
             --panel: #ffffff;
@@ -25,8 +55,9 @@
         
         * {
             box-sizing: border-box;
-            .box {
-            }
+        }
+
+        .box {
         }
         
         body {
@@ -239,12 +270,27 @@
                 <option value="12">12th grade</option>
             </select>
 
-        <button id="match-btn" type="button">Find clubs</button>
+<div class="button-group">
+    <button id="match-btn" type="button" class="box">Find clubs</button>
+    <button id="browse-btn" type="button" class="box secondary-btn">Browse all clubs</button>
+</div>
 
-        <section class="results">
-            <h2>Here are the clubs that match your interests:</h2>
-            <ul id="club-list"></ul>
-        </section>
+<section class="results" id="match-results">
+    <h2>Here are the clubs that match your interests:</h2>
+    <ul id="club-list"></ul>
+</section>
+
+<section class="results hidden" id="browse-section">
+    <h2>All Clubs (<span id="club-count">0</span>)</h2>
+    <input 
+        type="text" 
+        id="club-search" 
+        class="search-box" 
+        placeholder="Search clubs by name or interest..." 
+        aria-label="Search all clubs"
+    />
+    <ul id="all-clubs-list"></ul>
+</section>
     </main>
     <!--I had to manually do these clubs... obviously it is not all the clubs, but It is still alot-->
     <!--The place holder is baskeball so there may be some errors-->
@@ -843,6 +889,69 @@
         const gradeSelect = document.getElementById("grade");
         const matchButton = document.getElementById("match-btn");
         const clubList = document.getElementById("club-list");
+
+        const browseBtn = document.getElementById("browse-btn");
+        const browseSection = document.getElementById("browse-section");
+        const matchResults = document.getElementById("match-results");
+        const allClubsList = document.getElementById("all-clubs-list");
+        const clubSearch = document.getElementById("club-search");
+        const clubCount = document.getElementById("club-count");
+
+        const uniqueClubs = Array.from(
+            new Map(clubs.map(club => [club.name.trim(), club])).values()
+        ).sort((a, b) => a.name.localeCompare(b.name));
+
+        function renderAllClubs(filterText = "") {
+            allClubsList.replaceChildren();
+            const query = filterText.toLowerCase().trim();
+            const filtered = uniqueClubs.filter(club =>
+                club.name.toLowerCase().includes(query) ||
+                club.interests.some(interest => interest.toLowerCase().includes(query))
+            );
+
+            clubCount.textContent = filtered.length;
+            if (filtered.length === 0) {
+                const emptyMessage = document.createElement("li");
+                emptyMessage.className = "empty";
+                emptyMessage.textContent = `No clubs found matching "${filterText}".`;
+                allClubsList.appendChild(emptyMessage);
+                return;
+            }
+
+            filtered.forEach(club => {
+                const item = document.createElement("li");
+                item.className = "club-item box";
+                const name = document.createElement("span");
+                name.className = "club-name";
+                name.textContent = club.name;
+                item.appendChild(name);
+
+                const tags = document.createElement("div");
+                club.interests.forEach(interest => {
+                    const tag = document.createElement("span");
+                    tag.className = "club-tag box";
+                    tag.textContent = interest;
+                    tags.appendChild(tag);
+                });
+                item.appendChild(tags);
+                allClubsList.appendChild(item);
+            });
+        }
+
+        browseBtn.addEventListener("click", () => {
+            matchResults.classList.add("hidden");
+            browseSection.classList.remove("hidden");
+            renderAllClubs(clubSearch.value);
+        });
+
+        matchButton.addEventListener("click", () => {
+            browseSection.classList.add("hidden");
+            matchResults.classList.remove("hidden");
+        });
+
+        clubSearch.addEventListener("input", event => {
+            renderAllClubs(event.target.value);
+        });
 
         const clubDetails = {
             "Black Student Union": {
