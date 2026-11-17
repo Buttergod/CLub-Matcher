@@ -84,11 +84,11 @@ print(matchingClubs)
 
 ## Quick Start
 
-1. Install Github
+1. Install Github (If you already have it, good)
 ```bash
 winget install --id GitHub.cli
 ```
-2. Check with version
+2. Check with version (Check it just in case)
 ```bash
 gh --version
 ```
